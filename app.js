@@ -51,7 +51,7 @@ app.use((error, req, res, next) => {
 mongoose
   .connect(`mongodb+srv://sky:sky1234@cluster0-ftnod.mongodb.net/MERN?retryWrites=true&w=majority`)
   .then(() => {
-    app.listen(5000, () => console.log('Server running'));
+    app.listen(process.env.PORT || 5000, () => console.log('Server running'));
   })
   .catch(err => {
     console.log(err);
