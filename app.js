@@ -49,7 +49,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect(`mongodb+srv://sky:sky1234@cluster0-ftnod.mongodb.net/MERN?retryWrites=true&w=majority`)
+  .connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0-ftnod.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`)
   .then(() => {
     app.listen(process.env.PORT || 5000, () => console.log('Server running'));
   })
