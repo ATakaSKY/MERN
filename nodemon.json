@@ -1,0 +1,9 @@
+{
+    "env":{
+        "DB_USER":"sky",
+        "DB_PASS":"sky1234",
+        "DB_NAME":"MERN",
+        "SECRET_KEY":"secret_key",
+        "GOOGLE_SECRET_KEY":"AIzaSyDIGhUTx2AZGtohe3oREZ1r5ExX8-FTDOU"
+    }
+}
